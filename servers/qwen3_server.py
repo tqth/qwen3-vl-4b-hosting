@@ -21,7 +21,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 app = Flask(__name__)
 
-MODEL_ID = os.environ.get("MODEL_ID", "Qwen/Qwen3-8B-Instruct")
+MODEL_ID = os.environ.get("MODEL_ID", "Qwen/Qwen3-8B")
 LOAD_IN_4BIT = os.environ.get("LOAD_IN_4BIT", "0") == "1"
 
 print(f"Loading {MODEL_ID} ...")
