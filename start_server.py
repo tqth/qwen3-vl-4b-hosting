@@ -30,6 +30,14 @@ MODEL_REGISTRY = {
         "pip":    [],
         "log":    "/kaggle/working/llava_server.log",
     },
+    "qwen3": {
+        "script": "servers/qwen3_server.py",
+        "pip": [
+            "transformers>=4.57.0",
+            "accelerate",
+        ],
+        "log": "/kaggle/working/qwen3_server.log",
+    },
     # Vi du them InternVL sau nay:
     # "internvl": {
     #     "script": "servers/internvl_server.py",
